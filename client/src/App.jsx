@@ -11,6 +11,7 @@ import ProductList from "./pages/ProductList";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
+import Success from "./pages/Success"
 
 // useSelector((state) => state.user.currentUser);
 
@@ -23,7 +24,8 @@ const App = () => {
         <Route path="/products/:category" element={<ProductList />}></Route>
         <Route path="/product/:id" element={<Product />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
-        {/* <Route path="/success" element={<Success />}></Route>
+        <Route path="/success" element={<Success />}></Route>
+        {/* 
         <Route path="/profile" element={<Profile />}></Route>
         <Route path="/orders" element={<Orders />}></Route>
         <Route path="/wishlist" element={<Wishlist />}></Route> */}
