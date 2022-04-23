@@ -5,6 +5,9 @@ import {
   Navigate,
 } from "react-router-dom";
 
+import { useSelector } from "react-redux";
+
+
 import Product from "./pages/Product";
 import Home from "./pages/Home";
 import ProductList from "./pages/ProductList";
@@ -16,7 +19,7 @@ import Success from "./pages/Success"
 // useSelector((state) => state.user.currentUser);
 
 const App = () => {
-  const user = true
+  const user = useSelector((state) => state.user.currentUser);
   return (
     <Router>
       <Routes>

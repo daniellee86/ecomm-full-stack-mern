@@ -28,6 +28,7 @@ const Success = () => {
     };
     data && createOrder();
   }, [cart, data, currentUser]);
+
   return (
     <div
       style={{
