@@ -5,18 +5,18 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import { useSelector } from "react-redux";
-
-
-import Product from "./pages/Product";
 import Home from "./pages/Home";
+import Success from "./pages/Success";
 import ProductList from "./pages/ProductList";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
+import Product from "./pages/Product";
 import Cart from "./pages/Cart";
-import Success from "./pages/Success"
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import { useSelector } from "react-redux";
+import Profile from "./pages/Profile";
+import Orders from "./pages/Orders";
+import Wishlist from "./pages/Wishlist";
 
-// useSelector((state) => state.user.currentUser);
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -28,10 +28,9 @@ const App = () => {
         <Route path="/product/:id" element={<Product />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
         <Route path="/success" element={<Success />}></Route>
-        {/* 
         <Route path="/profile" element={<Profile />}></Route>
         <Route path="/orders" element={<Orders />}></Route>
-        <Route path="/wishlist" element={<Wishlist />}></Route> */}
+        <Route path="/wishlist" element={<Wishlist />}></Route> 
         <Route
           path="/login"
           element={user ? <Navigate to="/" /> : <Login />}
@@ -51,17 +50,7 @@ export default App;
 
 
 
-// import Home from "./pages/Home";
-// import Success from "./pages/Success";
-// import ProductList from "./pages/ProductList";
-// import Product from "./pages/Product";
-// import Cart from "./pages/Cart";
-// import Login from "./pages/Login";
-// import Register from "./pages/Register";
-// import { useSelector } from "react-redux";
-// import Profile from "./pages/Profile";
-// import Orders from "./pages/Orders";
-// import Wishlist from "./pages/Wishlist";
+
 
 // const App = () => {
 
