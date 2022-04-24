@@ -1,5 +1,7 @@
 ﻿# CLOBBA_Full-Stack_MERN
  
+ Full-Stack - MERN - E-Commerce - Progressive Web Application.
+ 
 ---
 
 CLIENT UI:
