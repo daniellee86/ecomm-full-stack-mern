@@ -37,37 +37,37 @@ REST API:
   
 - Advanced Mongo.DB functions; add orders, get orders, get monthly income, get this months and last months income. etc.
 
--STRIPE payment implementation
+- STRIPE payment implementation
 
 ---
 
 COUPLING FRONT AND BACK ENDS:
 
--React Router.
+- React Router.
 
--FETCH, FILTER and SORT products from Mongo.DB using; React Hooks, React State and Axios.get
+- FETCH, FILTER and SORT products from Mongo.DB using; React Hooks, React State and Axios.get
 
--Axios.
+- Axios.
 
--Redux Tool-kit Shopping cart.
+- Redux Tool-kit Shopping cart.
 
--Redux Tool-kit: CRUD operations, user authentication, complex state management (multiple inputs), user session managment.
+- Redux Tool-kit: CRUD operations, user authentication, complex state management (multiple inputs), user session managment.
 
--Redux tool-kit PERSIST.
+- Redux tool-kit PERSIST.
 
--React FIREBASE storage upload for product images
+- React FIREBASE storage upload for product images
 
 ---
 
 FULLY INTEGRATED REACT E-COMMERCE ADMIN DASHBOARD (FOR ADMIN SIGNIN):
 
--Fetch last N elements Node API
+- Fetch last N elements Node API
 
--Custom React charts
+- Custom React charts
 
--Full User profiles and data: orders, products purchased, amount spent, user details
+- Full User profiles and data: orders, products purchased, amount spent, user details
 
--Calculate business revenue
+- Calculate business revenue
 
 
 
