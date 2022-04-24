@@ -260,7 +260,7 @@ const Cart = () => {
 
             <StripeCheckout
               name="Clobba Checkout"
-              image="https://cdn2.vectorstock.com/i/1000x1000/26/16/quality-modern-graphic-design-us-dollar-sign-logo-vector-28012616.jpg"
+              image="https://github.com/daniellee86.png"
               billingAddress
               shippingAddress
               description={`Your total is £ ${cart.total}`}
