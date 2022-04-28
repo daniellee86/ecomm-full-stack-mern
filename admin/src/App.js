@@ -12,12 +12,19 @@ import NewProduct from "./pages/newProduct/NewProduct";
 import Login from "./pages/login/Login";
 //
 
+import Topbar from "./components/topbar/Topbar"
+import Sidebar from "./components/sidebar/Sidebar";
 
 
 function App() {
   const admin = useSelector((state) => state.user.currentUser.isAdmin);
   return (
     <Router>
+       <Topbar/>
+
+       <div className='container'>
+       <Sidebar />
+       
       <Routes>
         <Route path="/login" element={<Login />}></Route>
         {admin && (
@@ -32,6 +39,7 @@ function App() {
           </>
         )}
       </Routes>
+      </div>
     </Router>
   );
 }

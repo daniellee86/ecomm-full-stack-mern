@@ -6,8 +6,7 @@ import WidgetLg from "../../components/widgetLg/WidgetLg";
 import { useEffect, useMemo, useState } from "react";
 import { userRequest } from "../../requestMethods";
 //
-import Sidebar from "../../components/sidebar/Sidebar";
-import Topbar from "../../components/topbar/Topbar"
+
 
 export default function Home() {
 
@@ -49,20 +48,16 @@ export default function Home() {
 
 
   return (
-    <>
-    <Topbar/>
-    <div className="container">
-
-    <Sidebar />
-
     <div className="home">
+
       <FeaturedInfo />
+
       <Chart
       data={userStats}
       title="User Analytics"
       grid
       dataKey="Active User"
-    />
+     />
 
       <div className="homeWidgets">
         <WidgetSm/>
@@ -70,9 +65,6 @@ export default function Home() {
       </div>
 
     </div>
-
-    </div>
-    </>
   );
 }
 
