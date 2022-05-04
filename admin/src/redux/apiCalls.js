@@ -38,7 +38,9 @@ export const getProducts = async (dispatch) => {
 export const deleteProduct = async (id, dispatch) => {
   dispatch(deleteProductStart());
   try {
+    //BE CAREFUL WITH THIS, COMMENT OUT WHEN NOT USING. 
     // const res = await userRequest.delete(`/products/${id}`);
+    //CHANGE ID TO RES IF YOU WANT TO USE
     dispatch(deleteProductSuccess(id));
   } catch (err) {
     dispatch(deleteProductFailure());

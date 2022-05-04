@@ -19,6 +19,7 @@ const Container = styled.div``;
 const Wrapper = styled.div`
   padding: 20px;
   ${mobile({ padding: "10px" })}
+  background-color: #FAF5E4;
 `;
 
 
@@ -260,7 +261,7 @@ const Cart = () => {
 
             <StripeCheckout
               name="Clobba Checkout"
-              image="https://github.com/daniellee86.png"
+              image="https://www.vhv.rs/dpng/d/598-5987992_shopping-cart-chen-shopping-cart-with-circle-icon.png"
               billingAddress
               shippingAddress
               description={`Your total is £ ${cart.total}`}

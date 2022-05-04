@@ -10,6 +10,7 @@ position: absolute;
 top: 0;
 left: 0;
 background-color: rgba(0,0,0,0.2);
+border-radius: 10px;
 z-index: 3;
 display: flex;
 align-items: center;
@@ -27,7 +28,8 @@ height: 350px;
 display: flex;
 align-items: center;
 justify-content: center;
-background-color: #f5fbfd;
+background-color: #99C4C8;
+border-radius: 10px;
 position: relative;
 
 &:hover ${Info}{

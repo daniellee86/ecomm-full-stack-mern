@@ -11,6 +11,7 @@ display: flex;
 position: relative;
 overflow: hidden;
 ${mobile({ display: "none" })}
+color: #171010;
 `
 const Arrow = styled.div`
 width: 50px;
@@ -27,7 +28,7 @@ left: ${props=> props.direction === "left" && "10px"};
 right: ${props=> props.direction === "right" && "10px"};
 margin: auto;
 cursor: pointer;
-opacity: 0.5;
+opacity: 0.8;
 z-index: 2;
 `
 const Wrapper = styled.div`
@@ -47,29 +48,44 @@ background-color: #${props=>props.bg};
 const ImgContainer = styled.div`
 height: 100%;
 flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
 `
 const Image = styled.img`
-height: 80%;
+height: 100%;
 `
 
 const InfoContainer = styled.div`
 flex: 1;
-padding: 50px; 
+white-space: pre-wrap;
+`
+
+const InfoWrapper = styled.div`
+width: 70%;
 `
 const Title = styled.h1`
 font-size: 70px;
+border-bottom: solid 1.5px #171010;
+padding: 20px 0;
 `
 const Desc = styled.p`
 margin: 50px 0;
+padding: 20px 0;
 font-size: 20px;
 font-weight: 500;
 letter-spacing: 3px;
+line-height: 1.5;
+border-bottom: solid 1.5px #171010;
 `
 const Button = styled.button`
 padding: 10px;
 font-size: 20px;
 background-color: transparent;
 cursor: pointer;
+border: solid 1.5px #171010 ;
+outline: none;
+border-radius: 20px;
 `
 
 const Slider = () => {
@@ -100,9 +116,11 @@ const Slider = () => {
              <Image src={item.img}/>
             </ImgContainer>
             <InfoContainer>
+                <InfoWrapper>
                 <Title>{item.title}</Title>
                 <Desc>{item.desc}</Desc>
                 <Button>SHOP NOW</Button>
+                </InfoWrapper>
             </InfoContainer>
             </Slide>
             ))}

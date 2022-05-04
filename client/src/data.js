@@ -1,24 +1,24 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://i.ibb.co/DG69bQ4/2.png",
-      title: "SUMMER SALE",
-      desc: "DON'T COMPROMISE ON STYLE! GET UPTO 50% OFF ALL YOUR NEW CLOBBA.",
-      bg: "f5fafd",
+      img: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2c2e1563-ba1e-44fc-b029-8897181b1142/dd3z4tx-6fc357ab-6289-41f5-bd08-2f05c796e2e4.png/v1/fill/w_813,h_983,strp/meredith_mickelson_png_by_jessicarufus_dd3z4tx-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4OSIsInBhdGgiOiJcL2ZcLzJjMmUxNTYzLWJhMWUtNDRmYy1iMDI5LTg4OTcxODFiMTE0MlwvZGQzejR0eC02ZmMzNTdhYi02Mjg5LTQxZjUtYmQwOC0yZjA1Yzc5NmUyZTQucG5nIiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LLmY5JDt12LCQEIgCDpIHDBMVox7RLu7ExF3JecVjfc",
+      title: "SUMMER\nSALE.",
+      desc: "DON'T COMPROMISE ON STYLE!\nGET UPTO 50% OFF\nALL YOUR NEW CLOBBA.",
+      bg: "FFBD35",
     },
     {
       id: 2,
-      img: "https://www.pngall.com/wp-content/uploads/2016/05/Model-Free-PNG-Image.png",
-      title: "AUTUMN COLLECTION",
+      img: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2c2e1563-ba1e-44fc-b029-8897181b1142/dbqwq3h-20a37e2e-2142-4eee-9994-3cf48b7fba1c.png/v1/fill/w_730,h_1095,strp/model_png_by_jessicarufus_dbqwq3h-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ2MyIsInBhdGgiOiJcL2ZcLzJjMmUxNTYzLWJhMWUtNDRmYy1iMDI5LTg4OTcxODFiMTE0MlwvZGJxd3EzaC0yMGEzN2UyZS0yMTQyLTRlZWUtOTk5NC0zY2Y0OGI3ZmJhMWMucG5nIiwid2lkdGgiOiI8PTk3NSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.bBY224uiCn_lKZ0ISgLhXA5iDwvVEeokWwzfMzj0e-0",
+      title: "AUTUMN\nCOLLECTION.",
       desc: "DON'T COMPROMISE ON STYLE! GET UPTO 50% OFF ALL YOUR NEW CLOBBA.",
-      bg: "fcf1ed",
+      bg: "3FA796",
     },
     {
       id: 3,
-      img: "https://www.pngall.com/wp-content/uploads/2016/05/Model-PNG-File.png",
-      title: "COMFY CASUALS",
+      img: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2582790c-1cb9-48bf-af8f-a9cf98096477/d8p622z-80edaae0-e630-4da1-8c6b-7c86a0ecaf22.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI1ODI3OTBjLTFjYjktNDhiZi1hZjhmLWE5Y2Y5ODA5NjQ3N1wvZDhwNjIyei04MGVkYWFlMC1lNjMwLTRkYTEtOGM2Yi03Yzg2YTBlY2FmMjIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Bn0MCAGo6mkSyDZXNjcjwjlrE3yQatvIX1Ga2xu6U1M",
+      title: "COMFY\nCASUALS.",
       desc: "DON'T COMPROMISE ON STYLE! GET UPTO 50% OFF ALL YOUR NEW CLOBBA.",
-      bg: "FFFFCC",
+      bg: "fF6363",
     },
   ];
 

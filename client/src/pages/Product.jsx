@@ -13,8 +13,10 @@ import { useDispatch } from "react-redux"
 
 
 const Container = styled.div`
+background-color:  #FAF5E4;
 `
 const Wrapper = styled.div`
+height: 70vh;
 padding: 50px;
 display: flex;
 ${mobile({ padding: "10px", flexDirection:"column" })}
@@ -24,14 +26,17 @@ flex:1;
 `
 const Image = styled.img`
 width: 100%;
-height: 90vh;
-object-fit: cover;
+height: 100%;
+object-fit: contain;
 ${mobile({ height: "40vh" })}
 `
 const InfoContainer = styled.div`
 flex: 1;
-padding: 0 50px;
+padding: 0 70px;
 ${mobile({ padding: "10px" })}
+display: flex;
+flex-direction: column;
+justify-content: center;
 `
 const Title = styled.h1`
 font-weight: 200;
@@ -98,7 +103,7 @@ const Amount = styled.span`
 width: 30px;
 height: 30px;
 border-radius: 10px;
-border: 1px solid teal;
+border: 1px solid #125B50;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -106,7 +111,7 @@ margin: 0px 5px;
 `
 const Button = styled.button`
 padding: 15px;
-border: 2px solid teal;
+border: 2px solid #125B50;
 background-color: white;
 cursor: pointer;
 font-weight: 500;

@@ -9,6 +9,7 @@ padding: 20px;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
+background-color: #FAF5E4;
 `
 
 const Products = ({cat,filters,sort}) => {

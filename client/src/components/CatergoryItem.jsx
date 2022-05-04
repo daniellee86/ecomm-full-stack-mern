@@ -26,16 +26,17 @@ align-items: center;
 justify-content: center;
 `
 const Title = styled.h1`
-color: white;
+color: #FAF5E4;
 margin: 20px;
 `
 const Button = styled.button`
 border: none;
 padding: 10px;
-background-color: white;
-color: grey;
+background-color: #FAF5E4;
+color: #2B2B2B;
 cursor: pointer;
 font-weight: 600;
+border-radius: 20px;
 `
 
 const CatergoryItem = ({ item }) => {

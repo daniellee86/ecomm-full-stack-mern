@@ -5,22 +5,23 @@ import { mobile } from "../responsive";
 const Container = styled.div`
 display:flex;
 ${mobile({ flexDirection: "column" })}
+background-color: #FAF5E4;
 `
 //
 const Left = styled.div`
 flex: 1;
 display: flex;
 flex-direction: column;
+justify-content: center;
 padding: 20px;
 `
 const Logo = styled.h1`
 
 `
-const Desc = styled.p`
-margin: 20px 0px;
-`
+
 const SocialContainer = styled.div`
 display: flex;
+margin-top: 20px;
 
 `
 const SocialIcon = styled.div`
@@ -86,10 +87,6 @@ const Footer = () => {
 <Container>
     <Left>
         <Logo>Daniel Clough</Logo>
-        <Desc>This web app was built using React. Home Page features a pure React/Javascript
-              slider, Categories, interactive product gallery and newsletter.
-              Functional reusable Styled-Components and MaterialUI.
-        </Desc>
 
         <SocialContainer>
             <SocialIcon color="3B5999" >

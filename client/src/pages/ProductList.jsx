@@ -11,7 +11,9 @@ import { useState } from "react"
 
 
 
-const Container = styled.div``
+const Container = styled.div`
+background-color:  #FAF5E4;
+`
 
 const Title = styled.h1`
 margin: 20px;

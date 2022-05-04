@@ -4,7 +4,7 @@ import { mobile } from "../responsive";
 
 const Container = styled.div`
 height: 60vh;
-background-color: #fcf5f5;
+background-color: #FEE2C5;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -37,7 +37,7 @@ padding-left: 20px;
 const Button = styled.button`
 flex: 1;
 border:none;
-background-color: teal;
+background-color: #125B50;
 color: white;
 `
 

@@ -9,6 +9,8 @@ import { Link } from "react-router-dom"
 const Container = styled.div`
 height: 60px;
 ${mobile({ height: "50px" })}
+background-color: #FAF5E4;
+color: #171010;
 ` 
 const Wrapper = styled.div`
 padding: 10px 20px;
@@ -38,6 +40,7 @@ ${mobile({ marginLeft: "10px" })}
 const Input = styled.input`
 border: none;
 ${mobile({ width: "50px" })}
+background-color: #FAF5E4;
 `
 const Center = styled.div`
 flex: 1;
@@ -46,6 +49,9 @@ text-align: center;
 const Logo = styled.h1`
 font-weight: bold;
 ${mobile({ fontsize: "24px" })}
+letter-spacing: 5px;
+color:#FAF5E4;
+text-shadow: -3px 2px #171010 ;
 `
 const Right = styled.div`
 flex: 1;
@@ -60,8 +66,6 @@ cursor: pointer;
 margin-left: 25px;
 ${mobile({ fontSize: "12px", marginLeft: "5px" })}
 `
-
-
 //
 const Navbar = () => {
   const quantity = useSelector(state=>state.cart.quantity)
