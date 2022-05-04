@@ -98,6 +98,7 @@ const AmountContainer = styled.span`
 display: flex;
 align-items: center;
 font-weight: 700;
+cursor: pointer;
 `
 const Amount = styled.span`
 width: 30px;

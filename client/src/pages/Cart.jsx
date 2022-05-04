@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 import StripeCheckout from "react-stripe-checkout";
 import { useEffect, useState } from "react";
 import { userRequest } from "../requestMethods";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 //stripe public key
 const KEY = process.env.REACT_APP_STRIPE;
@@ -161,6 +161,7 @@ const Button = styled.button`
   background-color: black;
   color: white;
   font-weight: 600;
+  cursor: pointer;
 `;
 
 const Cart = () => {
@@ -180,15 +181,14 @@ const Cart = () => {
           tokenId: stripeToken.id,
           amount: cart.total * 100,
         });
-        navigate("/success", { 
-          state: {
-          stripeData: res.data,
-          products: cart,} 
-        }
-        );
-      } catch {}
+        const data = res.data;
+        const cartState = { data, cart}
+        navigate("/success", { state: cartState});
+      } catch (err){
+        console.log(err)
+      }
     };
-    stripeToken && cart.total>=1 && makeRequest();
+    stripeToken && makeRequest();
   }, [stripeToken, cart.total, navigate, cart]);
 
 
@@ -199,12 +199,27 @@ const Cart = () => {
       <Wrapper>
         <Title>YOUR BAG</Title>
         <Top>
+        <Link to="/" style={{ textDecoration: 'none', color: "#171010" }}>
           <TopButton>CONTINUE SHOPPING</TopButton>
+         </Link> 
           <TopTexts>
             <TopText>Shopping Bag(2)</TopText>
             <TopText>Your Wishlist (0)</TopText>
           </TopTexts>
-          <TopButton type="filled">CHECKOUT NOW</TopButton>
+
+          <StripeCheckout
+              name="Clobba Checkout"
+              image="https://www.vhv.rs/dpng/d/598-5987992_shopping-cart-chen-shopping-cart-with-circle-icon.png"
+              billingAddress
+              shippingAddress
+              description={`Your total is £ ${cart.total}`}
+              amount={cart.total * 100}
+              token={onToken}
+              stripeKey={KEY}
+            >
+            <TopButton type="filled">CHECKOUT NOW</TopButton>
+            </StripeCheckout>
+        
         </Top>
         <Bottom>
           <Info>

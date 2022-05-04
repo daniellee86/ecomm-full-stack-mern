@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
+import { Link } from "react-router-dom"
 import { userRequest } from "../requestMethods";
 
 const Success = () => {
   const location = useLocation();
   console.log(location)
+  //this below should be location.state.data, i have purposefully changed it so the useeffect doesnt trigger because it creates an infinite loop placing the order over and over - NEEDS FIXING.
   const data = location.state.stripeData;
   const cart = location.state.cart;
   const currentUser = useSelector((state) => state.user.currentUser);
+  console.log(currentUser)
   const [orderId, setOrderId] = useState(null);
 
   useEffect(() => {
@@ -24,6 +27,7 @@ const Success = () => {
           address: data.billing_details.address,
         });
         setOrderId(res.data._id);
+  
       } catch {}
     };
     data && createOrder();
@@ -42,7 +46,9 @@ const Success = () => {
       {orderId
         ? `Order has been created successfully. Your order number is ${orderId}`
         : `Successfull. Your order is being prepared...`}
+      <Link to="/" style={{ textDecoration: 'none', color: "#171010" }}>
       <button style={{ padding: 10, marginTop: 20 }}>Go to Homepage</button>
+      </Link>  
     </div>
   );
 };

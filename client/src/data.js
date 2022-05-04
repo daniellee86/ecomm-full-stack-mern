@@ -5,6 +5,8 @@ export const sliderItems = [
       title: "SUMMER\nSALE.",
       desc: "DON'T COMPROMISE ON STYLE!\nGET UPTO 50% OFF\nALL YOUR NEW CLOBBA.",
       bg: "FFBD35",
+      category: "women",
+
     },
     {
       id: 2,
@@ -12,6 +14,7 @@ export const sliderItems = [
       title: "AUTUMN\nCOLLECTION.",
       desc: "DON'T COMPROMISE ON STYLE! GET UPTO 50% OFF ALL YOUR NEW CLOBBA.",
       bg: "3FA796",
+      category: "coats",
     },
     {
       id: 3,
@@ -19,6 +22,7 @@ export const sliderItems = [
       title: "COMFY\nCASUALS.",
       desc: "DON'T COMPROMISE ON STYLE! GET UPTO 50% OFF ALL YOUR NEW CLOBBA.",
       bg: "fF6363",
+      category: "jeans",
     },
   ];
 

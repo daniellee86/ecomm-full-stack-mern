@@ -52,6 +52,7 @@ ${mobile({ fontsize: "24px" })}
 letter-spacing: 5px;
 color:#FAF5E4;
 text-shadow: -3px 2px #171010 ;
+cursor: pointer;
 `
 const Right = styled.div`
 flex: 1;
@@ -82,18 +83,23 @@ const Navbar = () => {
           </SearchContainer>
          </Left>
 
-         <Center><Logo>CLOBBA</Logo></Center>
+         <Center><Link to="/" style={{ textDecoration: 'none' }}><Logo>CLOBBA</Logo></Link></Center>
 
          <Right>
-             <MenuItem>REGISTER</MenuItem>
+            <Link to="/register" style={{ textDecoration: 'none', color: "#171010"}}><MenuItem>REGISTER</MenuItem></Link>
+
+             <Link to="/login" style={{ textDecoration: 'none', color: "#171010" }}>
              <MenuItem>SIGN IN</MenuItem>
-             <Link to="/cart">
+             </Link>
+
+             <Link to="/cart" style={{ textDecoration: 'none', color: "#171010" }}>
              <MenuItem>
              <Badge badgeContent={quantity} color="primary">
                  <ShoppingCartOutlined/>
              </Badge>
              </MenuItem>
              </Link>
+
          </Right>
 
         </Wrapper>

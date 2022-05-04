@@ -75,15 +75,19 @@ const Product = ({item}) => {
   
       <Info>
       <Icon>
+      <Link to="/cart"  style={{ textDecoration: 'none', color: "#171010"}}>
           <ShoppingCartOutlined/>
+       </Link>   
       </Icon>
      <Icon>
-       <Link to={`/product/${item._id}`}>
+       <Link to={`/product/${item._id}`}  style={{ textDecoration: 'none', color: "#171010"}}>
        <SearchOutlined/>
        </Link>
       </Icon>
       <Icon>
+      <Link to={`/product/${item._id}`}  style={{ textDecoration: 'none', color: "#171010"}}>
           <FavoriteBorderOutlined/>
+      </Link>
       </Icon>
       </Info>
 
