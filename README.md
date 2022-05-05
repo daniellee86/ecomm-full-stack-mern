@@ -1,7 +1,7 @@
 ﻿# CLOBBA_Full-Stack_MERN
- 
- Full-Stack - MERN - E-Commerce - Progressive Web Application.
- 
+
+Full-Stack - MERN - E-Commerce - Progressive Web Application.
+
 ---
 
 CLIENT UI:
@@ -36,7 +36,6 @@ REST API:
 
 - JSON Web Token (JWT) user verification. Node.JS CRUD operations with JWT AUTH and Mongo.DB
   (getusers, addusers, getproduct, addproduct, addorder) etc.
-  
 - Advanced Mongo.DB functions; add orders, get orders, get monthly income, get this months and last months income. etc.
 
 - STRIPE payment implementation
@@ -71,15 +70,10 @@ FULLY INTEGRATED REACT E-COMMERCE ADMIN DASHBOARD (FOR ADMIN SIGNIN):
 
 - Calculate business revenue
 
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="./images/home.png" alt="full size portfolio image">
+<img src="./images/cart.png" alt="cart image">
+<img src="./images/admin1.png" alt="admin image">
+<img src="./images/admin2.png" alt="admin image">
+<img src="./images/admin 3.png" alt="admin image">
+<img src="./images/postman2.png" alt="postman image">
+<img src="./images/mongoDB clobba.png" alt="database image">
