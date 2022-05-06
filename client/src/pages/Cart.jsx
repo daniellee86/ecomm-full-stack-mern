@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { mobile } from "../responsive";
+import { mobile, tablet } from "../responsive";
 import { useSelector } from "react-redux";
 import StripeCheckout from "react-stripe-checkout";
 import { useEffect, useState } from "react";
@@ -58,21 +58,26 @@ const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
   ${mobile({ flexDirection: "column" })}
+  ${tablet({ flexDirection: "column" })}
 `;
 
 const Info = styled.div`
   flex: 3;
+
 `;
 
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
-  ${mobile({ flexDirection: "column" })}
+  ${mobile({flexDirection: "column" })}
 `;
 
 const ProductDetail = styled.div`
   flex: 2;
   display: flex;
+  ${mobile({
+    flexDirection: "column",
+    alignItems: "center" })}
 `;
 
 const Image = styled.img`
@@ -137,6 +142,11 @@ const Summary = styled.div`
   border-radius: 10px;
   padding: 20px;
   height: 50vh;
+  ${tablet({ 
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center"
+     })}
 `;
 
 const SummaryTitle = styled.h1`

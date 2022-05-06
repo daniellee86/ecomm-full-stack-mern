@@ -23,11 +23,12 @@ const Left = styled.div`
 flex: 1;
 display: flex;
 align-items: center;
+${mobile({ display: "none" })}
+
 `
 const Language = styled.span`
 font-size: 14px;
 cursor: pointer;
-${mobile({ display: "none" })}
 `
 const SearchContainer = styled.div`
 border: 0.5px solid lightgray;
@@ -59,13 +60,13 @@ flex: 1;
 display: flex;
 align-items: center;
 justify-content: flex-end;
- ${mobile({ flex: 2, justifyContent: "center" })}
+ ${mobile({ justifyContent: "center" })}
 `
 const MenuItem = styled.div`
 font-size: 14px;
 cursor: pointer;
 margin-left: 25px;
-${mobile({ fontSize: "12px", marginLeft: "5px" })}
+${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `
 //
 const Navbar = () => {

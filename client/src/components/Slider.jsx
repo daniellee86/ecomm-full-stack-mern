@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import { sliderItems } from "../data"
-import { mobile } from "../responsive";
+import { mobile, tablet } from "../responsive";
 
 const Container = styled.div`
 width: 100%;
@@ -69,6 +69,7 @@ const Title = styled.h1`
 font-size: 70px;
 border-bottom: solid 1.5px #171010;
 padding: 20px 0;
+${tablet({ fontSize: "50px" })}
 `
 const Desc = styled.p`
 margin: 50px 0;
@@ -78,6 +79,7 @@ font-weight: 500;
 letter-spacing: 3px;
 line-height: 1.5;
 border-bottom: solid 1.5px #171010;
+${tablet({ fontSize: "15px" })}
 `
 const Button = styled.button`
 padding: 10px;

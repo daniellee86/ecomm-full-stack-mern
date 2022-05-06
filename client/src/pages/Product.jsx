@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar"
 import Newsletter from "../components/Newsletter"
 import Footer from "../components/Footer"
 import { Add, Remove } from "@material-ui/icons"
-import { mobile } from "../responsive";
+import { mobile, tablet } from "../responsive";
 import { useEffect, useState } from "react"
 import { publicRequest} from "../requestMethods"
 import { addProduct } from "../redux/cartRedux"
@@ -19,7 +19,10 @@ const Wrapper = styled.div`
 height: 70vh;
 padding: 50px;
 display: flex;
-${mobile({ padding: "10px", flexDirection:"column" })}
+${mobile({ 
+  padding: "10px", 
+  flexDirection:"column",
+  height: "100vh" })}
 `
 const ImgContainer = styled.div`
 flex:1;
@@ -93,6 +96,8 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 ${mobile({ width: "100%" })}
+${tablet({ width: "100%" })}
+
 `
 const AmountContainer = styled.span`
 display: flex;
@@ -120,6 +125,7 @@ font-weight: 500;
 &:hover{
   background-color: #f8f4f4;
 }
+
 `
 
 
