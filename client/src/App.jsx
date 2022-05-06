@@ -14,6 +14,7 @@ import Cart from "./pages/Cart";
 import Success from "./pages/Success";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import ScrollToTop from "./utils/ScrollToTop";
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
   const user = useSelector((state) => state.user.currentUser);
   return (
     <Router>
+      <ScrollToTop>
       <Routes>
         <Route exact path="/" element={<Home />}></Route>
         <Route path="/products/:category" element={<ProductList />}></Route>
@@ -37,6 +39,7 @@ const App = () => {
           element={user ? <Navigate to="/" /> : <Register />}
         ></Route>
       </Routes>
+      </ScrollToTop>
     </Router>
   );
 };
