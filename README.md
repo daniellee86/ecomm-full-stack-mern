@@ -1,6 +1,11 @@
 ﻿# CLOBBA_Full-Stack_MERN
+ 
+ https://clobba.herokuapp.com/cart
 
 Full-Stack - MERN - E-Commerce - Progressive Web Application.
+
+(Card Number: 4242424242424242. mm/yy: 12/34.  cvc: 567)
+ 
 
 ---
 
