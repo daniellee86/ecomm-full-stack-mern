@@ -27,11 +27,12 @@ mongoose
 app.use(cors())    
 //allows express to process json from requests
 app.use(express.json());
-//app.METHOD(PATH - on server, HANDLER - function executed when route is matched)
+
+//app(listen on basepath (/api) and route auth - 
+//authroute contains routes that complete the url and reach the endpoint
+//where a controller/handler function will run  )
 app.use("/api/auth", authRoute);
-// express use api endpoint, to access server routes and functions that handle HTTP requests.
 app.use("/api/users", userRoute);
-//
 app.use("/api/products", productRoute);
 app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
